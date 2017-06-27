@@ -40,6 +40,14 @@ class Config:
         self.merge_threshold = 0.1  # upper threshold for merging
         self.split_threshold = 0.1  # lower threshold for splitting
 
+        #found in preprocessing
+        self.nt0 = 61 # Referenced in preprocessing, unsure of use
+        self.wPCA = None
+        self.fbinary = "" # Filename of 2d electrode array
+        self.fproc = "" #not sure, opened with write access?
+        self.initialize = "fromData" #initializing function?
+        self.chanMap = None # a matlab file for channel mapping or the array itself. 
+        # appears to load "chamMap" and "connected" -> a binary array of the channels that are connected?
 
 class Signal:
     def __init__(self, data, fs, coordinatemap, n_channel):
