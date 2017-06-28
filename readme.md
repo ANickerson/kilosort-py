@@ -1,5 +1,7 @@
 # Kilosort python port
 
+**Does not currently work**
+
 This is a first attempt at porting the kilosort algorithm to python.
 
 My aim is to implement all the algorithms in https://github.com/cortex-lab/KiloSort/ in numpy and validate with matlab.
